@@ -1,0 +1,44 @@
+{
+  "name": "sprite-animation",
+  "version": "1.0.0",
+  "description": "Generate CSS sprite-based animations from a folder of frames, using one Gulp command",
+  "engines": {
+    "node": ">=0.12.0 ~5.9.0",
+    "npm": ">=2.14.12 ~3.7.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigmdennis/sprite-animation.git"
+  },
+  "keywords": [
+    "gulp",
+    "animation",
+    "css",
+    "sprite"
+  ],
+  "author": "Craig Dennis <craig@simplebitdesign.com> (http://simplebitdesign.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigmdennis/sprite-animation/issues"
+  },
+  "homepage": "https://github.com/craigmdennis/sprite-animation#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "cssnano": "^3.7.5",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-count": "^0.3.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp.spritesmith-multi": "^3.1.0",
+    "merge-stream": "^1.0.0",
+    "path": "^0.12.7",
+    "postcss-import": "^8.1.2",
+    "yargs": "^5.0.0"
+  }
+}

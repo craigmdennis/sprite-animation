@@ -1,0 +1,28 @@
+/*
+  Generate the animation based on the width of the resulting sprite
+*/
+
+{{#sprites}}
+{{#unless @index}}
+
+@keyframes play-{{{classname}}} {
+  100% { background-position: -{{half total_width}}px 0; }
+}
+
+{{/unless}}
+{{/sprites}}
+
+/*
+  Tell each animation class which animation to play
+  Need a way to pass in an imageCount
+*/
+
+.animation--{{{classname}}} {
+  width: {{{custom_size}}}px;
+  height: {{{custom_size}}}px;
+  background-size: auto {{{custom_size}}}px;
+}
+
+.animating.animation--{{{classname}}} {
+  animation: play-{{{classname}}} 2s steps({{{steps}}}) infinite;
+}

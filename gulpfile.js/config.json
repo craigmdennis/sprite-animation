@@ -1,0 +1,22 @@
+{
+  "root": {
+    "src": "./source",
+    "dest": "./dest",
+
+    "tasks" : {
+
+      "animation": {
+        "src": "animations",
+        "dest": "images/animations",
+        "extensions": ["png"],
+        "size": 300
+      },
+
+      "css": {
+        "autoprefixer": {
+          "browsers": ["last 3 version"]
+        }
+      }
+    }
+  }
+}
